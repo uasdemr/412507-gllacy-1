@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог мороженного</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="header">
+        <a href="https://htmlacademy.ru" class="header-logo">
+          <img src="http://via.placeholder.com/154x64" alt="Logo">
+        </a>
+        <nav class="header-main-menu">
+          <ul class="header-menu">
+            <li><a href="#" class="menu-item">Каталог</a></li>
+            <li><a href="#" class="menu-item">Доставка и оплата</a></li>
+            <li><a href="#" class="menu-item">О Компании</a></li>
+          </ul>
+          <ul class="header-user-navigation">
+            <li><a href="#" class="user-navigation-item" title="Поиск по сайту">Поиск</a></li>
+            <li><a href="#" class="user-navigation-item">Вход</a></li>
+            <li><a href="#" class="user-navigation-item">Пусто</a></li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <p class="header-contacts-time">С 10 до 20, ежедневно</p>
+          <p class="header-contacts-phone">8 812 450-25-25</p>
+        </div>
+      </header>
+      <main class="main">
+        <section class="filter">
+          <ul class="breadcrumbs">
+              <li><a class="site-link" href="index.html">Главная</a></li>
+              <li><a class="site-link" href="#">Каталог</a></li>
+              <li class="breadcrumbs-current">Сливочное</li>
+          </ul>
+          <h2 class="filter-title">Сливочное мороженное</h2>
+          <form action="#" method="get">
+            <div class="filter-elements">
+                <p class="filter-sorting">Сортировка</p>
+                <select class="sorting-options">
+                  <option class="filter-option">по популярности</option>
+                  <option class="filter-option">сначала недорогие</option>
+                  <option class="filter-option">сначала дорогие</option>
+                  <option class="filter-option">по жирности</option>
+                </select>
+              </div>
+              <div class="filter-elements">
+                <p class="filter-sorting">Цена: 100 руб. - 500 руб.</p>
+                <input type="range">
+              </div>
+              <div class="filter-elements">
+                <p class="filter-sorting">Жирность:</p>
+                <input id="radio-0" name="radio" type="radio" value="0">
+                <label for="radio-0">0%</label>
+                <input id="radio-10" name="radio" type="radio" value="10" checked>
+                <label for="radio-10">10%</label>
+                <input id="radio-30" name="radio" type="radio" value="30">
+                <label for="radio-30">30%</label>
+                <input id="radio-higher-30" name="radio" type="radio" value="over-30">
+                <label for="radio-higher-30">выше 30%</label>
+              </div>
+              <div class="filter-elements">
+                <p class="filter-sorting">Наполнители:</p>
+                <input id="option1" type="checkbox" name="option1" value="chocolate" checked>
+                <label for="option1" class="filter-label">шоколадные</label>
+                <input id="option2" type="checkbox" name="option2" value="sugar" checked>
+                <label for="option1" class="filter-label">сахарные присыпки</label>
+                <input id="option3" type="checkbox" name="option3" value="sugar">
+                <label for="option3" class="filter-label">фрукты</label>
+                <input id="option4" type="checkbox" name="option4" value="syrup">
+                <label for="option4" class="filter-label">сиропы</label>
+                <input id="option5" type="checkbox" name="option5" value="jam">
+                <label for="option5" class="filter-label">джемы</label>
+              </div>
+              <button type="submit">Применить</button>
+          </form>
+        </section>
+        <section class="main-catalog">
+          <h2 class="visually-hidden">Раздел: "Каталог" - выбирите основу и добавьте наполнители</h2>
+          <div class="container">
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="hits-item">
+              <div class="item">
+                <div class="main-hits-img">
+                  <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="pagination">
+          <h2 class="visually-hidden">Раздел: - "Нумерация страниц". Ознакомься с ассортиментом мороженного - полистай каталог.</h2>
+          <div class="container">
+            <a href="#" class="icon-prev">Назад</a>
+            <ul class="pagination-links">
+              <li><a href="#" class="pagination-item active">1</a></li>
+              <li><a href="#" class="pagination-item">2</a></li>
+              <li><a href="#" class="pagination-item">3</a></li>
+              <li><a href="#" class="pagination-item">4</a></li>
+              <li><a href="#" class="pagination-item">5</a></li>
+            </ul>
+            <a href="#" class="icon-next">Вперед</a>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-social">
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">I</a>
+            <a href="#" class="social-icon">F</a>
+            <a href="#" class="social-icon">B</a>
+          </div>
+          <div class="footer-about">
+            <div class="about-container">
+              <ul class="footer-menu">
+                <li class="footer-menu-item">
+                  <a href="#" class="footer-menu-link site-link">Для поставщиков</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link site-link">О производстве</a></li>
+              </ul>
+            </div>
+            <div class="about-container">
+              <ul class="footer-menu">
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link site-link">Наши документы</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link site-link">Экологические стандарты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-copyright">
+          <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <div class="copyright-img">
+              <img src="http://via.placeholder.com/110x40" alt="HTML Academy">
+            </div>
+            <p class="copyright-academy">Сделано в <span class="academy site-link">HTML Academy</span> &copy; 2017</p>
+          </a>
+        </div>
+        </div>
+      </footer>
+      <div class="modal modal-cart">
+        <div class="container">
+          <div class="item">
+            <span class="item-delete">X</span>
+            <div class="cart-img">
+              <img src="http://via.placeholder.com/30x30" alt="Пломбир с апельсиновым джемом">
+            </div>
+            <p class="cart-item-title">Пломбир с апельсиновым джемом <span class="cart-item-cost">1,5 кг х 200 руб.</span><span class="cart-item-sum">300 руб.</span></p>
+          </div>
+          <div class="item">
+            <span class="item-delete">X</span>
+            <div class="cart-img">
+              <img src="http://via.placeholder.com/30x30" alt="Пломбир с апельсиновым джемом">
+            </div>
+            <p class="cart-item-title">Клубничный пломбир с присыпкой<span class="cart-item-cost">1,5 кг х 300 руб.</span><span class="cart-item-sum">450 руб.</span></p>
+          </div>
+          <b>Итог: 750 руб.</b>
+          <button class="btn cart-btn">оформить заказ</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

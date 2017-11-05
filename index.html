@@ -2,9 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Магазин мороженного "Глэйси"</title>
   </head>
   <body>
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
     <div class="site-wrapper">
       <header class="header">
         <div class="header-logo">
@@ -49,60 +52,62 @@
       <main class="main">
         <section class="main-offer">
           <div class="container">
-          <div class="offer-card offer-card-raspberries">
-            <h2 class="offer-card-slogan">Малинка даром!</h2>
-            <p class="offer-card-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="btn offer-btn" href="#">Хочу варенье!</a>
+            <h2 class="visually-hidden">Раздел: "Топпинг" - узнай, как получить подарок при покупке!</h2>
+            <div class="offer-card offer-card-raspberries">
+              <h2 class="offer-card-slogan">Малинка даром!</h2>
+              <p class="offer-card-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a class="btn offer-btn" href="#">Хочу варенье!</a>
+            </div>
+            <div class="offer-card offer-card-chocolate">
+              <h2 class="offer-card-slogan">Шоколадки даром!</h2>
+              <p class="offer-card-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <a class="btn offer-btn" href="#">Хочу шоколадки!</a>
+            </div>
           </div>
-          <div class="offer-card offer-card-chocolate">
-            <h2 class="offer-card-slogan">Шоколадки даром!</h2>
-            <p class="offer-card-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a class="btn offer-btn" href="#">Хочу шоколадки!</a>
-          </div>
-        </div>
         </section>
         <section class="main-hits">
+          <h2 class="visually-hidden">Раздел: "Хит" - выбор наших постоянных покупателей!</h2>
           <div class="container">
-            <a href="#" class="hits-item">
+            <article class="hits-item">
               <div class="item">
                 <div class="main-hits-img">
                   <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
-                <p class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-                <button class="btn hits-item-btn">Быстрый просмотр</button>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
               </div>
-            </a>
-            <a href="#" class="hits-item">
+            </article>
+            <article class="hits-item">
               <div class="item">
                 <div class="main-hits-img">
                   <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
-                <p class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-                <button class="btn hits-item-btn">Быстрый просмотр</button>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
               </div>
-            </a>
-            <a href="#" class="hits-item">
+            </article>
+            <article class="hits-item">
               <div class="item">
                 <div class="main-hits-img">
                   <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
-                <p class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-                <button class="btn hits-item-btn">Быстрый просмотр</button>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
               </div>
-            </a>
-            <a href="#" class="hits-item">
+            </article>
+            <article class="hits-item">
               <div class="item">
                 <div class="main-hits-img">
                   <img src="http://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
-                <p class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-                <button class="btn hits-item-btn">Быстрый просмотр</button>
+                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
               </div>
-            </a>
+            </article>
           </div>
         </section>
         <section class="shop-description">
@@ -122,15 +127,17 @@
         </section>
         <div class="main-blog">
           <article class="blog-news">
+            <h3 class="visually-hidden">Новости нашего блога</h3>
             <div class="blog-news-container">
               <p class="blog-news-caption">Новое в нашем блоге</p>
               <a href="#" class="blog-news-methods">10 способов сервировки фруктовых щербетов к столу</a>
             </div>
           </article>
           <section class="main-blog-info">
+            <h3 class="visually-hidden">Полуйчай сладкую рассылку по почте и узнавай новости из первых рук!</h3>
             <div class="blog-info-container">
               <p class="blog-info-slogan">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-              <form class="blog-info-form" action="" method="post">
+              <form class="blog-info-form" action="#" method="post">
                 <label class="visually-hidden">Введите ваш адрес электронной почты для подписки.
                 </label>
                 <input class="site-input blog-info-email" type="email" placeholder="Электронная почта">
@@ -140,6 +147,7 @@
           </section>
         </div>
         <section class="main-map">
+          <h3 class="visually-hidden">Карта проезда.</h3>
           <div class="map-img">
             <img src="http://via.placeholder.com/1200x430" alt="Карта проезда">
           </div>
@@ -182,9 +190,9 @@
           <div class="footer-copyright">
           <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
             <div class="copyright-img">
-              <img src="http://via.placeholder.com/110x40" alt="HTML Academy" width="110px" height="40px">
+              <img src="http://via.placeholder.com/110x40" alt="HTML Academy">
             </div>
-            <p class="copyright-academy">Сделано в <span class="academy site-link">HTML Academy</span> &copy 2017</p>
+            <p class="copyright-academy">Сделано в <span class="academy site-link">HTML Academy</span> &copy; 2017</p>
           </a>
         </div>
         </div>
@@ -192,14 +200,14 @@
     </div>
   <div class="modal modal-search">
     <h3 class="visually-hidden">Введите то, что ищете</h3>
-    <form action="" class="modal-find" method="get">
+    <form action="#" class="modal-find" method="get">
       <label class="modal-label visually-hidden" for="modal-search">Поиск по сайту</label>
       <input class="site-input" id="modal-search" type="text" placeholder="Что ищем?">
     </form>
   </div>
   <div class="modal modal-log-in">
     <h3 class="visually-hidden">Для того, что бы мы могли с вами связаться, заполните фору</h3>
-    <form action="" class="modal-log-in" method="post">
+    <form action="#" class="modal-log-in" method="post">
       <label class="visually-hidden">Введите электронную почту для входа в личный кабинет</label>
         <input class="site-input log-in-input" type="email" name="email" placeholder="Электронная почта">
       <label class="visually-hidden">Введите пароль для входа в личный кабинет</label>
@@ -215,7 +223,7 @@
     <h3 class="visually-hidden">Форма обратной связи</h3>
     <h3 class="modal-feedback-slogan">Мы обязательно вам ответим!</h3>
     <button class="modal-close">Закрыть</button>
-    <form action="" method="post">
+    <form action="#" method="post">
       <label class="visually-hidden">Как к вам можно обращаться при ответе?
         <input class="site-input feedback-input" type="text" name="name" placeholder="Как вас зовут?">
       </label>
@@ -223,7 +231,7 @@
         <input class="site-input feedback-input" type="email" name="email" placeholder="Ваша почта для ответа?">
       </label>
       <label class="visually-hidden">Введите в этом поле текст вашего обращения.
-        <input class="site-input feedback-input" type="textarea" name="textarea" placeholder="Напишите что-нибудь...">
+        <textarea class="site-input feedback-input" name="textarea" placeholder="Напишите что-нибудь..."></textarea>
       </label>
       <button class="btn feedback-btn" type="submit">Отправить</button>
     </form>
