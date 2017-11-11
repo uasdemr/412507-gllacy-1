@@ -5,24 +5,25 @@
     <title>Магазин мороженного "Глэйси"</title>
   </head>
   <body>
+    <h1 class="visually-hidden">Магазин мороженного приветствует Вас на главной странице!</h1>
     <input type="radio" id="btn-1" name="toggle" checked>
     <input type="radio" id="btn-2" name="toggle">
     <input type="radio" id="btn-3" name="toggle">
     <div class="site-wrapper">
       <header class="header">
         <div class="header-logo">
-          <img src="http://via.placeholder.com/154x64" alt="Logo">
+          <img src="http://via.placeholder.com/154x64" alt="Gllacy-Shop логотип">
         </div>
         <nav class="header-main-menu">
           <ul class="header-menu">
-            <li><a href="catalog.html" class="menu-item">Каталог</a></li>
-            <li><a href="#" class="menu-item">Доставка и оплата</a></li>
-            <li><a href="#" class="menu-item">О Компании</a></li>
+            <li><a href="catalog.html" class="menu-item" aria-label="Страница каталога">Каталог</a></li>
+            <li><a href="#" class="menu-item" aria-label="Доставка и оплата">Доставка и оплата</a></li>
+            <li><a href="#" class="menu-item" aria-label="О компании">О Компании</a></li>
           </ul>
           <ul class="header-user-navigation">
-            <li><a href="#" class="user-navigation-item" title="Поиск по сайту">Поиск</a></li>
-            <li><a href="#" class="user-navigation-item">Вход</a></li>
-            <li><a href="#" class="user-navigation-item">Пусто</a></li>
+            <li><a href="#" class="user-navigation-item" aria-label="Поиск по сайту">Поиск</a></li>
+            <li><a href="#" class="user-navigation-item" aria-label="Вход">Вход</a></li>
+            <li><a href="#" class="user-navigation-item" aria-label="Корзина покупателя">Пусто</a></li>
           </ul>
         </nav>
         <div class="header-contacts">
@@ -56,12 +57,12 @@
             <div class="offer-card offer-card-raspberries">
               <h2 class="offer-card-slogan">Малинка даром!</h2>
               <p class="offer-card-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <a class="btn offer-btn" href="#">Хочу варенье!</a>
+              <a class="btn offer-btn" href="#" aria-label="Добавить варенье">Хочу варенье!</a>
             </div>
             <div class="offer-card offer-card-chocolate">
               <h2 class="offer-card-slogan">Шоколадки даром!</h2>
               <p class="offer-card-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <a class="btn offer-btn" href="#">Хочу шоколадки!</a>
+              <a class="btn offer-btn" href="#" aria-label="Добавить шоколад">Хочу шоколадки!</a>
             </div>
           </div>
         </section>
@@ -75,7 +76,7 @@
                 </div>
                 <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
                 <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
-                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+                <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
               </div>
             </article>
             <article class="hits-item">
@@ -85,7 +86,7 @@
                 </div>
                 <p class="main-hits-price">380<span class="hits-price-block">/кг</span></p>
                 <h2 class="main-hits-name">Сливочно-кофейное с кусочками шоколада</h2>
-                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+                <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
               </div>
             </article>
             <article class="hits-item">
@@ -95,7 +96,7 @@
                 </div>
                 <p class="main-hits-price">355<span class="hits-price-block">/кг</span></p>
                 <h2 class="main-hits-name">Сливочно-клубничное с присыпкой из белого шоколада</h2>
-                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+                <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
               </div>
             </article>
             <article class="hits-item">
@@ -105,7 +106,7 @@
                 </div>
                 <p class="main-hits-price">415<span class="hits-price-block">/кг</span></p>
                 <h2 class="main-hits-name">Сливочное крем-брюле с карамельной подливкой</h2>
-                <a href="#" class="btn hits-item-btn">Быстрый просмотр</a>
+                <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
               </div>
             </article>
           </div>
@@ -130,7 +131,7 @@
             <h3 class="visually-hidden">Новости нашего блога</h3>
             <div class="blog-news-container">
               <p class="blog-news-caption">Новое в нашем блоге</p>
-              <a href="#" class="blog-news-methods">10 способов сервировки фруктовых щербетов к столу</a>
+              <a href="#" class="blog-news-methods" aria-label="Способы сервировки фруктовых щербетов">10 способов сервировки фруктовых щербетов к столу</a>
             </div>
           </article>
           <section class="main-blog-info">
@@ -138,10 +139,9 @@
             <div class="blog-info-container">
               <p class="blog-info-slogan">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="blog-info-form" action="#" method="post">
-                <label class="visually-hidden">Введите ваш адрес электронной почты для подписки.
-                </label>
-                <input class="site-input blog-info-email" type="email" placeholder="Электронная почта">
-                <button class="btn blog-info-btn" type="submit">Отправить</button>
+                <label class="visually-hidden" for="blog-info-email">Введите ваш адрес электронной почты для подписки.</label>
+                <input class="site-input blog-info-email" id="blog-info-email" type="email" placeholder="Электронная почта">
+                <button class="btn blog-info-btn" type="submit" aria-label="Подписаться на рассылку">Отправить</button>
               </form>
             </div>
           </section>
@@ -149,7 +149,7 @@
         <section class="main-map">
           <h3 class="visually-hidden">Карта проезда.</h3>
           <div class="map-img">
-            <img src="img/map.jpg" alt="Карта проезда">
+            <img src="img/map.jpg" alt="Карта проезда - картинка.">
           </div>
           <span class="map-pin">I`m a Pin</span>
           <div class="map-contacts">
@@ -167,30 +167,30 @@
       <footer class="footer">
         <div class="container">
           <div class="footer-social">
-            <a href="#" class="social-icon" title="Twitter">Twitter</a>
-            <a href="#" class="social-icon" title="Instagram">Instagram</a>
-            <a href="#" class="social-icon" title="Facebook">Facebook</a>
-            <a href="#" class="social-icon" title="Vkontakte">Vkontakte</a>
+            <a href="#" class="social-icon" aria-label="Twitter">Twitter</a>
+            <a href="#" class="social-icon" aria-label="Instagram">Instagram</a>
+            <a href="#" class="social-icon" aria-label="Facebook">Facebook</a>
+            <a href="#" class="social-icon" aria-label="Vkontakte">Vkontakte</a>
           </div>
           <div class="footer-about">
             <div class="about-container">
               <ul class="footer-menu">
                 <li class="footer-menu-item">
-                  <a href="#" class="footer-menu-link site-link">Для поставщиков</a></li>
-                <li class="footer-menu-item"><a href="#" class="footer-menu-link site-link">О производстве</a></li>
+                  <a href="#" class="footer-menu-link site-link" aria-label="Для поставщиков">Для поставщиков</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link site-link" aria-label="О производстве">О производстве</a></li>
               </ul>
             </div>
             <div class="about-container">
               <ul class="footer-menu">
-                <li class="footer-menu-item"><a href="#" class="footer-menu-link site-link">Наши документы</a></li>
-                <li class="footer-menu-item"><a href="#" class="footer-menu-link site-link">Экологические стандарты</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link site-link" aria-label="Наши документы">Наши документы</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-menu-link site-link" aria-label="Экологические стандарты">Экологические стандарты</a></li>
               </ul>
             </div>
           </div>
           <div class="footer-copyright">
-            <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт HTML Academy">
               <div class="copyright-img">
-                <img src="http://via.placeholder.com/110x40" alt="HTML Academy">
+                <img src="http://via.placeholder.com/110x40" alt="Логотип HTML Academy">
               </div>
               <p class="copyright-academy">Сделано в <span class="academy site-link">HTML Academy</span> &copy; 2017</p>
             </a>
@@ -206,34 +206,31 @@
       </form>
     </div>
     <div class="modal modal-log-in">
-      <h3 class="visually-hidden">Для того, что бы мы могли с вами связаться, заполните фору</h3>
+      <h3 class="visually-hidden">Вход в личный кабинет, либо регистрация нового члена клуба любителей мороженного</h3>
       <form action="#" class="modal-log-in" method="post">
-        <label class="visually-hidden">Введите электронную почту для входа в личный кабинет</label>
-          <input class="site-input log-in-input" type="email" name="email" placeholder="Электронная почта">
-        <label class="visually-hidden">Введите пароль для входа в личный кабинет</label>
-          <input class="site-input log-in-input" type="password" placeholder="Пароль">
-        <button class="btn log-in-btn" type="submit">Войти</button>
+        <label class="visually-hidden" for="log-in-email">Введите адрес электронной почты</label>
+        <input class="site-input log-in-input" id="log-in-email" type="email" name="email" placeholder="Электронная почта">
+        <label class="visually-hidden" for="log-in-pass">Введите пароль</label>
+        <input class="site-input log-in-input" id="log-in-pass" type="password" placeholder="Пароль">
+        <button class="btn log-in-btn" type="submit" aria-label="Вход в личный кабинет">Войти</button>
       </form>
       <ul class="modal modal-log-in-links">
-        <li><a class="modal-log-in-btn" href="#">Забыли пароль?</a></li>
-        <li><a class="modal-log-in-btn" href="#">Новая регистрация</a></li>
+        <li><a class="modal-log-in-btn" href="#" aria-label="Забыл пароль, хочу восстановить">Забыли пароль?</a></li>
+        <li><a class="modal-log-in-btn" href="#" aria-label="Зарегистрируйте меня пожалуйста">Новая регистрация</a></li>
       </ul>
     </div>
     <div class="modal modal-feedback">
-      <h3 class="visually-hidden">Форма обратной связи</h3>
+      <h3 class="visually-hidden">Форма обратной связи.</h3>
       <h3 class="modal-feedback-slogan">Мы обязательно вам ответим!</h3>
-      <button class="modal-close">Закрыть</button>
+      <button class="modal-close" aria-label="Закрыть форму обратной связи.">Закрыть</button>
       <form action="#" method="post">
-        <label class="visually-hidden">Как к вам можно обращаться при ответе?
-          <input class="site-input feedback-input" type="text" name="name" placeholder="Как вас зовут?">
-        </label>
-        <label class="visually-hidden">Введите адрес электронной почты.
-          <input class="site-input feedback-input" type="email" name="email" placeholder="Ваша почта для ответа?">
-        </label>
-        <label class="visually-hidden">Введите в этом поле текст вашего обращения.
-          <textarea class="site-input feedback-input" name="textarea" placeholder="Напишите что-нибудь..."></textarea>
-        </label>
-        <button class="btn feedback-btn" type="submit">Отправить</button>
+        <label class="visually-hidden" for="modal-feedback-name">Напишите имя для ответа.</label>
+        <input class="site-input feedback-input" id="modal-feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+        <label class="visually-hidden" for="modal-feedback-email">Введите адрес электронной почты.</label>
+        <input class="site-input feedback-input" id="modal-feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+        <label class="visually-hidden" for="modal-feedback-text">Введите в этом поле текст вашего обращения.</label>
+        <textarea class="site-textarea modal-feedback-text" id="modal-feedback-text" name="textarea" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="btn feedback-btn" type="submit" aria-label="Отправить данные.">Отправить</button>
       </form>
     </div>
   </body>
