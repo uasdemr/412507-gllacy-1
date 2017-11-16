@@ -283,7 +283,7 @@ input {
   color: #ffffff;
 }
 .sorting-options:hover {
-color: #323232;
+  color: #323232;
 }
 .filter-elements span {
   font-size: 16px;
@@ -301,12 +301,13 @@ color: #323232;
   font-weight: medium;
 }
 .filter-btn:active {
-  box-shadow: inset 0px 2px 1px 0px #696969;
+  box-shadow: inset 0 2px 1px 0 #696969;
 }
 .hits-item-btn {
   display: none;
 }
-.main-hits-name:hover + .hits-item-btn {
+.main-hits-name:hover+
+.hits-item-btn {
 display: inline-block;
 }
 .pagination-item.active {
