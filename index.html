@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин мороженного "Глэйси"</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <h1 class="visually-hidden">Магазин мороженного приветствует Вас на главной странице!</h1>
@@ -16,7 +19,16 @@
         </div>
         <nav class="header-main-menu">
           <ul class="header-menu">
-            <li><a href="catalog.html" class="menu-item" aria-label="Страница каталога">Каталог</a></li>
+            <li>
+              <a href="catalog.html" class="menu-item" aria-label="Страница каталога">Каталог</a>
+              <ul class="header-submenu">
+                <li><a href="#" class="submenu-link submenu-title">Новинки</a></li>
+                <li><a href="#" class="submenu-link">Сливочное</a></li>
+                <li><a href="#" class="submenu-link active">Щербеты</a></li>
+                <li><a href="#" class="submenu-link">Фруктовый лед</a></li>
+                <li><a href="#" class="submenu-link">Мелорин</a></li>
+              </ul>
+            </li>
             <li><a href="#" class="menu-item" aria-label="Доставка и оплата">Доставка и оплата</a></li>
             <li><a href="#" class="menu-item" aria-label="О компании">О Компании</a></li>
           </ul>
@@ -75,7 +87,7 @@
                   <img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="main-hits-price">310<span class="hits-price-block">/кг</span></p>
-                <h2 class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
+                <a href="#" class="main-hits-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
               </div>
             </article>
@@ -85,7 +97,7 @@
                   <img src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
                 </div>
                 <p class="main-hits-price">380<span class="hits-price-block">/кг</span></p>
-                <h2 class="main-hits-name">Сливочно-кофейное с кусочками шоколада</h2>
+                <a href="#" class="main-hits-name">Сливочно-кофейное с кусочками шоколада</a>
                 <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
               </div>
             </article>
@@ -95,7 +107,7 @@
                   <img src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 </div>
                 <p class="main-hits-price">355<span class="hits-price-block">/кг</span></p>
-                <h2 class="main-hits-name">Сливочно-клубничное с присыпкой из белого шоколада</h2>
+                <a href="#" class="main-hits-name">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
               </div>
             </article>
@@ -105,7 +117,7 @@
                   <img src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
                 </div>
                 <p class="main-hits-price">415<span class="hits-price-block">/кг</span></p>
-                <h2 class="main-hits-name">Сливочное крем-брюле с карамельной подливкой</h2>
+                <a href="#" class="main-hits-name">Сливочное крем-брюле с карамельной подливкой</a>
                 <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
               </div>
             </article>
@@ -154,10 +166,10 @@
           <span class="map-pin">I`m a Pin</span>
           <div class="map-contacts">
             <div class="map-contacts-container">
-              <p class="adress">Адрес главного офиса и офлайн магазина:</p>
-              <p class="street">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+              <p class="adress">Адрес главного офиса<br>и офлайн магазина:</p>
+              <p class="street"><b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b></p>
               <p class="phone-order">Для заказов по телефону:</p>
-              <p class="phone-number">8 812 450-25-25</p>
+              <p class="phone-number"><b>8 812 450-25-25</b></p>
               <p class="open">(с 10 до 20 ежедневно)</p>
               <a href="#" class="btn map-contacts-btn">Форма обратной связи</a>
             </div>
