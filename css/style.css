@@ -310,5 +310,5 @@ display: inline-block;
 }
 .hits-item:hover {
   background-color: #9bafa3;
-  box-shadow: inset 0px 2px 10px 0px rgba(105, 105, 105, 0.004);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
