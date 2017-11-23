@@ -33,7 +33,7 @@ input {
 }
 .site-wrapper {
   //background-color: #849d8f;
-  //background-color: #849d66;
+  background-color: #849d66;
 }
 .site-input {
 
@@ -103,7 +103,7 @@ input {
 }
 /*Slider*/
 .slider {
-  margin-left: 26px;
+  //margin-left: 26px;
 }
 .slider-slogan {
   font-size: 60px;
@@ -349,6 +349,7 @@ display: inline-block;
   padding: 0 26px;
   //background-color: #849d66;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .header,
 .header-main-menu,
@@ -383,10 +384,10 @@ display: inline-block;
   width: 560px;
   height: 230px;
   margin-bottom: 40px;
-  margin-left: 26px
+  //margin-left: 26px
 }
 .offer-card:last-child {
-  //margin-left: 26px;
+  margin-left: 26px;
 }
 .main-offer > .container {
   //justify-content: space-between;
@@ -401,10 +402,10 @@ display: inline-block;
   margin-left: 26px;
 }
 .hits-item:nth-child(4n+1) {
-  //margin-left: 0;
+  margin-left: 0;
 }
 .shop-description {
-  width: 1146px;
+  //width: 1146px;
   margin: 0 auto;
   margin-bottom: 40px;
   //box-sizing: border-box;
@@ -416,10 +417,10 @@ display: inline-block;
 .blog-article {
   width: 560px;
   min-height: 220px;
-  margin-left: 26px;
+  //margin-left: 26px;
 }
 .main-blog-info {
-  //margin-left: 26px;
+  margin-left: 26px;
 }
 .main-map {
   //margin-left: 40px ;
@@ -502,6 +503,7 @@ display: flex;
 }
 .filter {
   margin-bottom: 45px;
+  //margin-left: 26px;
 }
 .main-catalog > .container {
   display: -webkit-flex;
