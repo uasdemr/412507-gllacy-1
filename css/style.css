@@ -335,15 +335,17 @@ display: inline-block;
 .visually-hidden {
   display: none;
 }
-.site-wrapper {
-  padding: 0 26px;
-  background-color: #849d66
-}
 .all-wrapper{
-  width: 1200px;
+  //width: 1200px;
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: #849d66;
+  //background-color: #849d66;
+}
+.site-wrapper {
+  width: 1200px;
+  padding: 0 26px;
+  //background-color: #849d66;
+  margin: 0 auto;
 }
 .header,
 .header-main-menu,
@@ -424,6 +426,9 @@ display: inline-block;
   //margin-left: 40px ;
   position: relative;
 }
+.map-img > img {
+  width: 100%;
+}
 .map-contacts {
   width: 302px;
   height: 305px;
@@ -434,6 +439,10 @@ display: inline-block;
   border-radius: 20px;
   padding: 20px;
   box-sizing: border-box;
+}
+.footer {
+  width: 1200px;
+  margin: 0 auto;
 }
 .footer > .container {
   padding: 0 26px;
