@@ -1,4 +1,11 @@
 /*Глобальные стили*/
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+ }
 html, body, p {
   margin: 0;
   padding: 0;
@@ -335,9 +342,6 @@ display: inline-block;
 }
 
 /*Сетка*/
-.visually-hidden {
-  display: none;
-}
 .all-wrapper {
   //width: 1200px;
   box-sizing: border-box;
