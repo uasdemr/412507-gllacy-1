@@ -102,6 +102,9 @@ input {
   color: #323232;
 }
 /*Slider*/
+.slider {
+  margin-left: 26px;
+}
 .slider-slogan {
   font-size: 60px;
   line-height: 60px;
@@ -335,7 +338,7 @@ display: inline-block;
 .visually-hidden {
   display: none;
 }
-.all-wrapper{
+.all-wrapper {
   //width: 1200px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -380,10 +383,10 @@ display: inline-block;
   width: 560px;
   height: 230px;
   margin-bottom: 40px;
-  //margin-left: 26px
+  margin-left: 26px
 }
 .offer-card:last-child {
-  margin-left: 26px;
+  //margin-left: 26px;
 }
 .main-offer > .container {
   //justify-content: space-between;
@@ -395,17 +398,14 @@ display: inline-block;
 }
 .hits-item {
   width: 267px;
-  //margin-left: 26px;
-}
-.hits-item {
   margin-left: 26px;
 }
 .hits-item:nth-child(4n+1) {
-  margin-left: 0;
+  //margin-left: 0;
 }
 .shop-description {
   width: 1146px;
-  //margin-left: 26px;
+  margin: 0 auto;
   margin-bottom: 40px;
   //box-sizing: border-box;
 }
@@ -413,14 +413,13 @@ display: inline-block;
   display: flex;
   margin-bottom: 40px;
 }
-.blog-news,
-.main-blog-info {
+.blog-article {
   width: 560px;
-  height: 220px;
-  //margin-left: 26px;
+  min-height: 220px;
+  margin-left: 26px;
 }
 .main-blog-info {
-  margin-left: 26px;
+  //margin-left: 26px;
 }
 .main-map {
   //margin-left: 40px ;
