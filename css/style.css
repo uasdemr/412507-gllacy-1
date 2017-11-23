@@ -430,7 +430,13 @@ display: inline-block;
   //margin-left: 40px ;
   position: relative;
 }
+.map-frame {
+  position: relative;
+}
 .map-img > img {
+  width: 100%;
+}
+.map-frame {
   width: 100%;
 }
 .map-contacts {
