@@ -36,13 +36,35 @@
             </ul>
             <ul class="header-user-navigation">
               <li>
-                <a href="#" class="user-navigation-item find" aria-label="Поиск по сайту"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg></a>
+                <a href="#" class="user-navigation-item find" aria-label="Поиск по сайту"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+                  <div class="modal modal-search">
+                    <h3 class="visually-hidden">Введите то, что ищете</h3>
+                    <form action="#" class="modal-find" method="get">
+                      <label class="modal-label visually-hidden" for="modal-search">Поиск по сайту</label>
+                      <input class="site-input" id="modal-search" type="text" placeholder="Что ищем?">
+                    </form>
+                  </div>
+                </a>
               </li>
               <li>          
                 <a href="#" class="user-navigation-item enter" aria-label="Вход">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
                   <span class="user-navigation-span">Вход</span>
                 </a>
+                <div class="modal modal-log-in">
+                    <h3 class="visually-hidden">Вход в личный кабинет, либо регистрация нового члена клуба любителей мороженного</h3>
+                    <form action="#" method="post">
+                      <label class="visually-hidden" for="log-in-email">Введите адрес электронной почты</label>
+                      <input class="site-input log-in-input" id="log-in-email" type="email" name="email" placeholder="Электронная почта">
+                      <label class="visually-hidden" for="log-in-pass">Введите пароль</label>
+                      <input class="site-input log-in-input" id="log-in-pass" type="password" placeholder="Пароль">
+                      <button class="btn log-in-btn" type="submit" aria-label="Вход в личный кабинет">Войти</button>
+                    </form>
+                    <ul class="modal modal-log-in-links">
+                      <li><a class="modal-log-in-btn" href="#" aria-label="Забыл пароль, хочу восстановить">Забыли пароль?</a></li>
+                      <li><a class="modal-log-in-btn" href="#" aria-label="Зарегистрируйте меня пожалуйста">Новая регистрация</a></li>
+                    </ul>
+                  </div>
               </li>
               <li>
                 <a href="#" class="user-navigation-item basket" aria-label="Корзина покупателя">
@@ -260,27 +282,8 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal-search">
-      <h3 class="visually-hidden">Введите то, что ищете</h3>
-      <form action="#" class="modal-find" method="get">
-        <label class="modal-label visually-hidden" for="modal-search">Поиск по сайту</label>
-        <input class="site-input" id="modal-search" type="text" placeholder="Что ищем?">
-      </form>
-    </div>
-    <div class="modal modal-log-in">
-      <h3 class="visually-hidden">Вход в личный кабинет, либо регистрация нового члена клуба любителей мороженного</h3>
-      <form action="#" class="modal-log-in" method="post">
-        <label class="visually-hidden" for="log-in-email">Введите адрес электронной почты</label>
-        <input class="site-input log-in-input" id="log-in-email" type="email" name="email" placeholder="Электронная почта">
-        <label class="visually-hidden" for="log-in-pass">Введите пароль</label>
-        <input class="site-input log-in-input" id="log-in-pass" type="password" placeholder="Пароль">
-        <button class="btn log-in-btn" type="submit" aria-label="Вход в личный кабинет">Войти</button>
-      </form>
-      <ul class="modal modal-log-in-links">
-        <li><a class="modal-log-in-btn" href="#" aria-label="Забыл пароль, хочу восстановить">Забыли пароль?</a></li>
-        <li><a class="modal-log-in-btn" href="#" aria-label="Зарегистрируйте меня пожалуйста">Новая регистрация</a></li>
-      </ul>
-    </div>
+    
+    
     <div class="modal modal-feedback">
       <h3 class="visually-hidden">Форма обратной связи.</h3>
       <h3 class="modal-feedback-slogan">Мы обязательно вам ответим!</h3>
