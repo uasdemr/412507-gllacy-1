@@ -37,16 +37,22 @@ input {
   color: #323232;
 }
 input[type="text"],
-input[type="email"] {
-    //width: 360px;
-    height: 40px;
-    //margin-bottom: 10px;
-    /padding: 2px 5px;
+input[type="email"],
+input[type="password"],
+.site-textarea {
+    height: 38px;
+    padding: 0 10px;
+    box-sizing: border-box;
     color: #999999;
     border: 2px solid #d3d3d2;
     border-radius: 5px;
     vertical-align: middle;
-    //margin-right: 10px;
+}
+.site-textarea {
+  resize: none;
+  height: 150px;
+  padding-top: 10px;
+  box-sizing: border-box;
 }
 .hits-item svg {
   z-index: 1;
@@ -331,13 +337,13 @@ input[type="email"] {
   position: absolute;
   right: 23px;
   bottom: 25px;
+  padding: 9px 20px;
 }
 /*Секция ХИТ*/
 .main-hits-price {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
-
   position: absolute;
   top: 210px;
   align-items: baseline;
@@ -352,6 +358,9 @@ input[type="email"] {
   font-weight: 500;
   text-align: center;
   margin-bottom: 10px;
+  position: relative;
+  bottom: 0px;
+  z-index: 1;
 }
 .main-hits-name-span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -410,19 +419,30 @@ input[type="email"] {
 .blog-info-slogan {
   margin-bottom: 35px;
 }
+.blog-info-form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
 .blog-info-email {
   font-size: 16px;
   line-height: 24px;
   color: #999999;
+  width: 100%;
+  margin-right: 15px;
 }
 .blog-info-btn {
   font: inherit;
   font-size: 18px;
   line-height: 24px;
   color: #fefefe;
+  padding: 9px 20px;
   //width: 126px;
   //padding: 0 15px;
-  border-radius: 50px;
+  //border-radius: 50px;
   //padding-left: 3px;
   //padding-right: 3px;
 }
@@ -444,9 +464,24 @@ input[type="email"] {
 }
 .map-contacts-btn {
   font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 9px 24px;
+}
+.feedback-btn {
+  padding: 9px 15px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 25px;
+  width: 135px;
+  margin-left: 72%;
 }
 /*Кнопка*/
 .btn {
+  border: none;
   font: inherit;
   color: #fefefe;
   font-size: 18px;
@@ -467,32 +502,87 @@ input[type="email"] {
 .modal {
   background-color: #f8f7f4;
   color: #323232;
+  padding: 20px 20px;
+}
+.modal-find .site-input {
+  width: 340px;
 }
 .modal-search {
   position: absolute;
   top: 40px;
   right: 0;
-  padding: 20px 20px;
+  //padding: 20px 20px;
   border-radius: 5px;
   display: none;
 }
 .modal-log-in {
   width: 275px;
-  min-height: 215px;
   border-radius: 10px;
   position: absolute;
   right: 117px;
-  top: 60px;
+  top: 64px;
+  z-index: 1;
+  box-sizing: border-box;
   display: none;
+}
+.log-in-input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.modal-log-in-links {
+  width: 55%;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+.modal-feedback {
+  width: 480px;
+  position: absolute;
+  left: 30%;
+  top: 250px;
+  border-radius: 10px;
+  display: none;
+}
+.modal-feedback > form{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+.modal-feedback input {
+  margin-bottom: 20px;
+}
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: inherit;
+}
+.modal-close:hover {
+  cursor: pointer;
+}
+.feedback-input {
+  width: 60%;
 }
 .modal-feedback-slogan {
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .modal-log-in-btn {
   font-size: 13px;
   line-height: 24px;
   color: #323232;
+  
+}
+.modal-log-in-links span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .cart-item-title {
   font-size: 13px;
@@ -521,11 +611,13 @@ input[type="email"] {
 }
 /*----------------------filter------------------------*/
 /*-------------Fats-------------*/
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
                 display: none;
 }
 
-input[type="radio"] + label, input[type="checkbox"] + label {
+input[type="radio"] + label,
+input[type="checkbox"] + label {
     vertical-align: middle;
     //color: #7f8c8d;
 }
@@ -823,6 +915,10 @@ input[type="checkbox"]:checked+label>span:before{
   z-index: 1;
   left: 30px;
   display: none;
+  padding: 9px 15px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
 }
 
 /*.main-hits-name:hover+
@@ -849,7 +945,6 @@ display: inline-block;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-
   transition-property: background, border-radius, box-shadow;
   transition-duration: 0.3s;
   //transition-timing-function: linear;
@@ -859,14 +954,14 @@ display: inline-block;
   display: block;
 }
 .hits-item-btn:hover {
-  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.8);
+  //background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  //box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.8);
 }
 .hits-item-btn:active {
-background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+  //background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  //background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  //background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  //box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 }
 }
 .hits-item {
@@ -875,6 +970,7 @@ box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 }
 .hits-item svg {
 position: absolute;
+z-index: 2;
 }
 .main-hits-price > svg {
   top: 4px;

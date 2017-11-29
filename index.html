@@ -59,11 +59,12 @@
                       <label class="visually-hidden" for="log-in-pass">Введите пароль</label>
                       <input class="site-input log-in-input" id="log-in-pass" type="password" placeholder="Пароль">
                       <button class="btn log-in-btn" type="submit" aria-label="Вход в личный кабинет">Войти</button>
-                    </form>
-                    <ul class="modal modal-log-in-links">
-                      <li><a class="modal-log-in-btn" href="#" aria-label="Забыл пароль, хочу восстановить">Забыли пароль?</a></li>
-                      <li><a class="modal-log-in-btn" href="#" aria-label="Зарегистрируйте меня пожалуйста">Новая регистрация</a></li>
+                      <ul class="modal-log-in-links">
+                      <li><a class="modal-log-in-btn" href="#" aria-label="Забыл пароль, хочу восстановить"><span>Забыли пароль?</span></a></li>
+                      <li><a class="modal-log-in-btn" href="#" aria-label="Зарегистрируйте меня пожалуйста"><span>Новая регистрация</span></a></li>
                     </ul>
+                    </form>
+                    
                   </div>
               </li>
               <li>
@@ -113,12 +114,12 @@
               <div class="offer-card offer-card-raspberries">
                 <h2 class="offer-card-slogan">Малинка даром!</h2>
                 <p class="offer-card-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                <a class="btn offer-btn" href="#" aria-label="Добавить варенье">Хочу варенье!</a>
+                <a class="button offer-btn" href="#" aria-label="Добавить варенье">Хочу варенье!</a>
               </div>
               <div class="offer-card offer-card-chocolate">
                 <h2 class="offer-card-slogan">Шоколадки даром!</h2>
                 <p class="offer-card-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                <a class="btn offer-btn" href="#" aria-label="Добавить шоколад">Хочу шоколадки!</a>
+                <a class="button offer-btn" href="#" aria-label="Добавить шоколад">Хочу шоколадки!</a>
               </div>
             </div>
           </section>
@@ -135,7 +136,7 @@
                     <span class="hits-price-block">/кг</span>
                   </p>
                   <a href="#" class="main-hits-name"><span class="main-hits-name-span">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
-                  <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                  <a href="#" class="button hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                 </div>
               </article>
               <article class="hits-item">
@@ -148,7 +149,7 @@
                     <span class="hits-price-block">/кг</span>
                   </p>
                   <a href="#" class="main-hits-name"><span class="main-hits-name-span">Сливочно-кофейное с кусочками шоколада</span></a>
-                  <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                  <a href="#" class="button hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                 </div>
               </article>
               <article class="hits-item">
@@ -161,7 +162,7 @@
                     <span class="hits-price-block">/кг</span>
                   </p>
                   <a href="#" class="main-hits-name"><span class="main-hits-name-span">Сливочно-клубничное с присыпкой из белого шоколада</span></a>
-                  <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                  <a href="#" class="button hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                 </div>
               </article>
               <article class="hits-item">
@@ -174,7 +175,7 @@
                     <span class="hits-price-block">/кг</span>
                   </p>
                   <a href="#" class="main-hits-name"><span class="main-hits-name-span">Сливочное крем-брюле с карамельной подливкой</span></a>
-                  <a href="#" class="btn hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+                  <a href="#" class="button hits-item-btn" aria-label="Быстрый просмотр">Быстрый просмотр</a>
                 </div>
               </article>
             </div>
@@ -213,7 +214,7 @@
                 <form class="blog-info-form" action="#" method="post">
                   <label class="visually-hidden" for="blog-info-email">Введите ваш адрес электронной почты для подписки.</label>
                   <input class="site-input blog-info-email" id="blog-info-email" type="email" placeholder="Электронная почта">
-                  <button class="btn blog-info-btn" type="submit" aria-label="Подписаться на рассылку">Отправить</button>
+                  <button class="button blog-info-btn" type="submit" aria-label="Подписаться на рассылку">Отправить</button>
                 </form>
               </div>
             </section>
@@ -244,7 +245,7 @@
             <p class="phone-order">Для заказов по телефону:</p>
             <p class="phone-number"><b>8 812 450-25-25</b></p>
             <p class="open">(с 10 до 20 ежедневно)</p>
-            <a href="#" class="btn map-contacts-btn">Форма обратной связи</a>
+            <a href="#" class="button map-contacts-btn">Форма обратной связи</a>
           </div>
         </div>
     </section>
@@ -282,20 +283,22 @@
         </div>
       </div>
     </footer>
-    
-    
     <div class="modal modal-feedback">
       <h3 class="visually-hidden">Форма обратной связи.</h3>
       <h3 class="modal-feedback-slogan">Мы обязательно вам ответим!</h3>
-      <button class="modal-close" aria-label="Закрыть форму обратной связи.">Закрыть</button>
+      <button class="modal-close" aria-label="Закрыть форму обратной связи."><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="18px" height="17px" viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
+<polygon fill="#231F20" points="17.454,1.46 16.04,0.046 9,7.086 1.96,0.046 0.546,1.46 7.586,8.5 0.546,15.54 1.96,16.954 9,9.914 
+  16.04,16.954 17.454,15.54 10.414,8.5 "/>
+</svg></button>
       <form action="#" method="post">
         <label class="visually-hidden" for="modal-feedback-name">Напишите имя для ответа.</label>
         <input class="site-input feedback-input" id="modal-feedback-name" type="text" name="name" placeholder="Как вас зовут?">
         <label class="visually-hidden" for="modal-feedback-email">Введите адрес электронной почты.</label>
         <input class="site-input feedback-input" id="modal-feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
         <label class="visually-hidden" for="modal-feedback-text">Введите в этом поле текст вашего обращения.</label>
-        <textarea class="site-textarea modal-feedback-text" id="modal-feedback-text" name="textarea" placeholder="Напишите что-нибудь..."></textarea>
-        <button class="btn feedback-btn" type="submit" aria-label="Отправить данные.">Отправить</button>
+        <textarea rows="5" cols="15" class="site-textarea modal-feedback-text" id="modal-feedback-text" name="textarea" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="button feedback-btn" type="submit" aria-label="Отправить данные.">Отправить</button>
       </form>
     </div>
   </body>
