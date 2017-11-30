@@ -56,7 +56,7 @@ input[type="password"],
   box-sizing: border-box;
 }
 .hits-item svg {
-  z-index: 1;
+  //z-index: 1;
 }
 .all-wrapper {
   //background-color: #849d8f;
@@ -568,6 +568,15 @@ input[type="password"],
   font-size: 13px;
   line-height: 24px;
   color: #323232;
+  display: inline;
+}
+.log-in-btn {
+   font-size: 18px;
+  line-height: 24px;
+  color: #323232;
+  font-weight: 700;
+  padding: 8px 20px;
+  color: #fefefe;
 }
 .modal-log-in-links span {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -706,7 +715,6 @@ input[type="checkbox"] + label {
     vertical-align: middle;
     //color: #7f8c8d;
 }
-
 input[type="radio"] + label:before {
     content: "";
     display: inline-block;
@@ -739,7 +747,7 @@ input[type="radio"]:checked + label:before {
 }
 input[type="checkbox"]:checked + label:after {
   //background: #1abc9c;
-  //box-shadow: 0 0 0 3px #1abc9c;
+  box-shadow: 0 0 0 3px #1abc9c;
   border-right: 1px solid red;
   border-bottom: 1px solid red;
 }
@@ -952,6 +960,8 @@ input[type="checkbox"]:checked+label>span:before{
   transition-property: background, border-radius, box-shadow;
   transition-duration: 0.3s;
   //transition-timing-function: linear;
+}
+.hits-item:hover {
   z-index: 1;
 }
 .hits-item:hover .hits-item-btn {
@@ -959,12 +969,10 @@ input[type="checkbox"]:checked+label>span:before{
 }
 .hits-item > svg {
 position: absolute;
-//z-index: 2;
 }
 .main-hits-price > svg {
   position: absolute;
   top: 5px;
-  //right: 40px;
 }
 .main-hits-img {
   margin-bottom: 10px;
