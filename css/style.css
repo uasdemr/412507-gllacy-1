@@ -114,6 +114,7 @@ input[type="password"],
   color: #ffffff;
   background-color: #d07058;
   border: none;
+  box-shadow: none;
 }
 .menu-item.active span {
   border-bottom: none;
@@ -129,12 +130,6 @@ input[type="password"],
 .header-menu > li:first-child:hover .header-submenu {
   display: block;
 }
-/**************НЕ РАБОТАЕТ*******************/
-/*.header-menu > li:first-child:focus .header-submenu {
-  display: block;
-}.header-menu > li:first-child:active .header-submenu {
-  display: block;
-}*/
 .submenu-link {
   color: #323232;
   font-size: 14px;
@@ -215,6 +210,9 @@ input[type="password"],
 }
 .basket {
     padding: 8px 20px;
+}
+.basket:hover + .modal-cart {
+  display: block;
 }
 /*Slider*/
 .slider {
@@ -311,6 +309,11 @@ input[type="password"],
 #product-3:checked ~ .all-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
+#product-1:hover ~ .all-wrapper label[for="product-1"],
+#product-2:hover ~ .all-wrapper label[for="product-2"],
+#product-3:hover ~ .all-wrapper label[for="product-3"] {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 /********************Конец разметки .slider***********************/
 .offer-card-raspberries {
   background-image: url("../img/raspberry.jpg");
@@ -347,6 +350,7 @@ input[type="password"],
   position: absolute;
   top: 210px;
   align-items: baseline;
+  //z-index: 1;
 }
 .hits-price-block {
   font-size: 30px;
@@ -579,7 +583,6 @@ input[type="password"],
   font-size: 13px;
   line-height: 24px;
   color: #323232;
-  
 }
 .modal-log-in-links span {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -588,9 +591,12 @@ input[type="password"],
   font-size: 13px;
   line-height: 16px;
   color: #323232;
+  margin-left: 15px;
 }
 .cart-item-cost {
   color: #999999;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .cart-item-sum {
   color: #323232;
@@ -602,6 +608,67 @@ input[type="password"],
 }
 .item {
   position: relative;
+}
+/*Модальник, корзина*/
+.modal-cart {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 540px;
+  border-radius: 5px;
+  z-index: 1;
+  box-sizing: border-box;
+  display: none;
+}
+.cart-item {
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+  margin-bottom: 20px;
+}
+.item-box {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+.cart-item-sum-box {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cart-items-sum {
+  margin-bottom: 15px;
+}
+.cart-title-name {
+  display: inline-block;
+  width: 235px;
+}
+.cart-img {
+  padding-left: 20px;
+  //margin-right: 15px;
+}
+.cart-item-delete {
+  position: absolute;
+  top: 8px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: inherit;
+}
+.cart-btn {
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 9px 15px;
 }
 /*---------------------------КАТАЛОГ------------------------------------*/
 /*Кусочек header*/
@@ -963,11 +1030,6 @@ display: inline-block;
   //background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
   //box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 }
-}
-.hits-item {
-  position: relative;
-  margin-bottom: 25px;
-}
 .hits-item svg {
 position: absolute;
 z-index: 2;
@@ -978,6 +1040,8 @@ z-index: 2;
 }
 .main-hits-img {
   margin-bottom: 10px;
+  position: relative;
+  //z-index: 1;
 }
 .main-hits-img > img {
   border-radius: 50%;
@@ -1055,6 +1119,7 @@ z-index: 2;
 .hits-item {
   width: 267px;
   margin-left: 26px;
+  margin-bottom: 30px;
   position: relative;
 }
 .hits-item:nth-child(4n+1) {
@@ -1065,7 +1130,7 @@ z-index: 2;
   min-height: 305px;
   margin: 0 auto;
   margin-bottom: 40px;
-  margin-top: 30px;
+  //margin-top: 30px;
   //box-sizing: border-box;
 }
 .main-blog {
