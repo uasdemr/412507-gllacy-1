@@ -344,13 +344,16 @@ input[type="password"],
   line-height: 45px;
   font-weight: 700;
   position: absolute;
-  top: 210px;
+  top: 215px;
   align-items: baseline;
   //z-index: 1;
 }
 .hits-price-block {
   font-size: 30px;
-  padding-left: 25px;
+  padding-left: 30px;
+}
+.item .hits-price-block {
+  padding-left: 20px;
 }
 .main-hits-name {
   font-size: 16px;
@@ -954,13 +957,14 @@ input[type="checkbox"]:checked+label>span:before{
 .hits-item:hover .hits-item-btn {
   display: block;
 }
-.hits-item svg {
+.hits-item > svg {
 position: absolute;
-z-index: 2;
+//z-index: 2;
 }
 .main-hits-price > svg {
-  top: 4px;
-  right: 40px;
+  position: absolute;
+  top: 5px;
+  //right: 40px;
 }
 .main-hits-img {
   margin-bottom: 10px;
