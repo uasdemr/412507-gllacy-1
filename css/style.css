@@ -936,7 +936,27 @@ input[type="checkbox"]:checked + .indicator::before {
   border-radius: 10px;
   display: none;
 }
+.main-hits-item:before {
+  content: '';
+  background: rgba(255, 255, 255, 0.5);
+  width: 105%;
+  height: 120%;
+  left: -7px;
+  top: -7px;
+  position: absolute;
+  border-radius: 10px;
+  display: none;
+}
 .hits-item:hover:before {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  transition-property: background, border-radius, box-shadow;
+  transition-duration: 0.3s;
+  //transition-timing-function: linear;
+}
+.main-hits-item:hover:before {
   display: block;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -949,6 +969,9 @@ input[type="checkbox"]:checked + .indicator::before {
   z-index: 1;
 }
 .hits-item:hover .hits-item-btn {
+  display: block;
+}
+.main-hits-item:hover .hits-item-btn {
   display: block;
 }
 .hits-item > svg {
@@ -1026,6 +1049,10 @@ position: absolute;
   width: 1200px;
   display: flex;
 }
+.main-hits-index > .container {
+  width: 1200px;
+  display: flex;
+}
 .hits-item {
   width: 267px;
   margin-left: 26px;
@@ -1034,6 +1061,14 @@ position: absolute;
 }
 .hits-item:nth-child(4n+1) {
   margin-left: 0;
+}
+.main-hits-item {
+  position: relative;
+  margin-left: 26px;
+}
+.main-hits-item > svg {
+  position: absolute;
+  z-index: 1;
 }
 .shop-description {
   min-height: 305px;
