@@ -704,94 +704,78 @@ input[type="password"],
   color: #323232;
 }
 /*----------------------filter------------------------*/
-/*-------------Fats-------------*/
-input[type="radio"],
-input[type="checkbox"] {
-                display: none;
-}
-
-input[type="radio"] + label,
-input[type="checkbox"] + label {
-    vertical-align: middle;
-    //color: #7f8c8d;
-}
-input[type="radio"] + label:before {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    //margin-right: 8px;
-    vertical-align: middle;
-    border: 3px solid #ffffff;
-    //box-shadow: 0 0 0 3px #bdc3c7;
-}
-input[type="checkbox"] + label:before {
-  content: "";
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    //margin-right: 8px;
-    vertical-align: middle;
-    border: 2px solid #ffffff;
-    //box-shadow: 0 0 0 3px #bdc3c7;
-}
-input[type="radio"] + label:before {
-    border-radius: 50%;
-}
-input[type="checkbox"] + label:before {
-    border-radius: 2px;
-}
-input[type="radio"]:checked + label:before {
-    background: #edf1ef;
-    box-shadow: inset 0 0 0 3px #aabbb1;
-}
-input[type="checkbox"]:checked + label:after {
-  //background: #1abc9c;
-  box-shadow: 0 0 0 3px #1abc9c;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
-}
-
-input[type="radio"]:checked + label,
-input[type="checkbox"]:checked + label {
-    //color: #1abc9c;
-}
-label span {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  margin-left: 10px;
-  position: relative;
-}
-input[type="checkbox"]:checked+label>span:before{
-      content:"";
-      display:inline-block;
-      width:9px;
-      height:14px;
-      border:0 solid #eef1ef;
-      border-width:0 4px 4px 0;
-      -webkit-transform:rotateZ(45deg);
-      //margin:0 -20px;
-      pointer-events:none;
-      position: absolute;
-      left: -23px;
-      top: -5px;
-    }
 .filter-label {
-  padding: 5px 5px;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  top: 7px;
 }
-.filter-sorting:last-child {
-  margin-top: 20px;
+.filter-label input[type="checkbox"],
+.filter-label input[type="radio"] {
+  display: none;
+}
+.filter-label input[type="checkbox"] + .indicator,
+.filter-label input[type="radio"] + .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #e6ebe9;
+  border-radius: 2px;
+}
+.filter-label input[type="radio"] + .indicator {
+  border-radius: 50%;
+  border: 4px solid #e6ebe9;
+}
+.filter-label input[type="radio"] + .indicator {
+  top: -2px;
+}
+/*передаем событие на псевдо чекбокс*/
+.filter-label input[type="checkbox"]:active + .indicator,
+.filter-label input[type="radio"]:active + .indicator {
+  border-color: #ffffff;
+}
+/*Иконка выбранного чекбокса*/
+input[type="checkbox"]:checked + .indicator::before{
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 7px;
+  width: 8px;
+  height: 15px;
+  border-right: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+}
+/*Иконка выбранного radio*/
+.filter-label input[type="radio"]:checked + .indicator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+  background-color: #ffffff;
+}
+input[type="checkbox"]:checked + .indicator {
+  border-color: #fff;
+}
+input[type="radio"]:checked + .indicator {
+  border-color: #fff;
+}
+input[type="checkbox"]:checked + .indicator::before {
+  transform: rotate(45deg);
 }
 /*-----------range--------------*/
 .filter-item {
-  //margin-bottom: 15px;
   padding: 0;
   border: none;
 }
 .range-filter {
   width: 220px;
-  //margin-top: 49px;
 }
 .filter-item legend {
   font-size: 14px;
