@@ -307,17 +307,17 @@ margin-left: 10px;
 #product-1:checked ~ .all-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-ice-cream-1.png");
-  background-position: 78px 0;
+  background-position: 0 auto;
 }
 #product-2:checked ~ .all-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider-ice-cream-2.png");
-  background-position: 78px 0;
+  background-position: 0 auto;
 }
 #product-3:checked ~ .all-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider-ice-cream-3.png");
-  background-position: 78px 0;
+  background-position: 0 auto;
 }
 #product-1:checked ~ .all-wrapper #slide1,
 #product-2:checked ~ .all-wrapper #slide2,
@@ -1248,6 +1248,7 @@ position: absolute;
   font-size: 13px;
   line-height: 18px;
   font-weight: 700;
+  text-decoration: underline;
 }
 .footer-menu-link:hover {
   color: #ffbc9e;
