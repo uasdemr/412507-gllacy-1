@@ -1391,6 +1391,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   line-height: 18px;
   padding: 2px 7px;
   border-radius: 20px;
+  font-weight: 500;
 }
 .pagination-item:hover {
   background-color: #ffffff;
