@@ -55,11 +55,7 @@ input[type="password"],
   padding-top: 10px;
   box-sizing: border-box;
 }
-.hits-item svg {
-  //z-index: 1;
-}
 .all-wrapper {
-  //background-color: #849d8f;
   background-image: url("../img/slider-ice-cream-1.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -85,8 +81,6 @@ input[type="password"],
   width: 600px;
   line-height: 18px;
   font-weight: bold;
-  //justify-content: space-between;
-  //margin-top: 15px;
 }
 .header-menu > li:first-child {
 margin-left: 10px;
@@ -95,7 +89,6 @@ margin-left: 10px;
   display: inline-block;
   padding: 7px 13px;
   border-radius: 50px;
-  //margin-left: 5px;
   letter-spacing: 0.3px;
 }
 .menu-item-span {
