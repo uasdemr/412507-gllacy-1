@@ -589,7 +589,7 @@ input.blog-info-email {
 .modal-feedback {
   width: 480px;
   position: fixed;
-  right: 150px;
+  right: 35%;
   top: 160px;
   border-radius: 10px;
   display: none;
