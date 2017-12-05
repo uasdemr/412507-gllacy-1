@@ -617,8 +617,7 @@ input.blog-info-email {
   cursor: pointer;
 }
 @keyframes getform {
-  0% { transform: translateY(560px) ; }
-  70% { transform: translateY(-120px) ; }
+  0% { transform: translateY(560px) translateX(300px); }
 }
 .modal-show {
   display: block;
