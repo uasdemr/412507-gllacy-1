@@ -588,11 +588,12 @@ input.blog-info-email {
 }
 .modal-feedback {
   width: 480px;
-  position: absolute;
-  left: 30%;
-  top: 250px;
+  position: fixed;
+  right: 150px;
+  top: 160px;
   border-radius: 10px;
   display: none;
+  z-index: 1;
 }
 .modal-feedback > form{
   display: -webkit-flex;
@@ -614,6 +615,15 @@ input.blog-info-email {
   border: none;
   background-color: inherit;
   cursor: pointer;
+}
+@keyframes getform {
+  0% { transform: translateY(560px) ; }
+  70% { transform: translateY(-120px) ; }
+}
+.modal-show {
+  display: block;
+  animation-name: getform;
+  animation-duration: 0.6s;
 }
 .modal-close::before,
 .modal-close::after {

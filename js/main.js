@@ -1,20 +1,36 @@
 var button = document.querySelector(".map-contacts-btn");
-var formFlag = 0;
+var modalClose = document.querySelector(".modal-close");
+var modalForm = document.querySelector(".modal-feedback");
+var form = modalForm.querySelector("form");
 
-button.addEventListener("click", function () {
-  var modalForm = document.querySelector(".modal-feedback");
-  if(formFlag == 0) {
-    formFlag = 1;
-    modalForm.style.display = "block";
-  }
+button.addEventListener("click", function (e) {
+  e.preventDefault();
+  modalForm.classList.add("modal-show");
+  modalForm.querySelector("[name=name]").focus();
 });
 
-var modalClose = document.querySelector(".modal-close");
-
-modalClose.addEventListener("click", function () {
+modalClose.addEventListener("click", function (e) {
+  e.preventDefault();
   var modalForm = document.querySelector(".modal-feedback");
-  if(formFlag == 1) {
-    formFlag = 0;
-    modalForm.style.display = "none";
-  }
+  modalForm.classList.remove("modal-show");
+});
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var isEmpty = false;
+    for(var i = 0; i< form.length; i++){
+      if(form.elements[i].type==="text" || form.elements[i].type==="email"){
+        if(form.elements[i].value===''){
+          form.elements[i].style.borderColor = "red";
+          isEmpty = "true";
+        }else{
+          form.elements[i].style.borderColor = "";
+        }
+      }
+    }
+    if(isEmpty) return;
+    else {
+      form.submit();
+      modalForm.classList.remove("modal-show");
+    }
 });
