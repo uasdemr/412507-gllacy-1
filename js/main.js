@@ -19,7 +19,7 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   var isEmpty = false;
     for(var i = 0; i< form.length; i++){
-      if(form.elements[i].type==="text" || form.elements[i].type==="email"){
+      if(form.elements[i].type==="text" || form.elements[i].type==="email") {
         if(form.elements[i].value===''){
           form.elements[i].style.borderColor = "red";
           isEmpty = "true";

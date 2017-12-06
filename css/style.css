@@ -615,6 +615,7 @@ input.blog-info-email {
   border: none;
   background-color: inherit;
   cursor: pointer;
+  //outline: none;
 }
 @keyframes getform {
   0% { transform: translateY(560px) translateX(300px); }
