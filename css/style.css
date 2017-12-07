@@ -8,7 +8,7 @@
   width: 1px;
   height: 1px;
   margin: -1px;
- }
+}
 html, body, p {
   margin: 0;
   padding: 0;
@@ -86,7 +86,7 @@ input[type="password"],
   font-weight: bold;
 }
 .header-menu > li:first-child {
-margin-left: 10px;
+  margin-left: 10px;
 }
 .menu-item {
   display: inline-block;
@@ -206,6 +206,9 @@ margin-left: 10px;
 }
 .social-icon:hover > svg {
   fill: #ffffff;
+}
+.social-icon:active > svg {
+  fill: #e6ebe9;;
 }
 .find {
  padding: 4px 6px;
@@ -598,7 +601,7 @@ input.blog-info-email {
   display: none;
   z-index: 1;
 }
-.modal-feedback > form{
+.modal-feedback > form {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -835,7 +838,7 @@ input.blog-info-email {
   border-color: #ffffff;
 }
 /*Иконка выбранного чекбокса*/
-input[type="checkbox"]:checked + .indicator::before{
+input[type="checkbox"]:checked + .indicator::before {
   content: "";
   position: absolute;
   top: -4px;
@@ -955,6 +958,11 @@ input[type="checkbox"]:checked + .indicator::before {
 .range-controls .toggle-max {
   left: 133px;
 }
+.range-controls .toggle-min:hover,
+.range-controls .toggle-max:hover {
+  transform: scale(1.1);
+}
+
 /*----------End Range------------*/
 .breadcrumbs {
   font-size: 14px;
@@ -1293,7 +1301,14 @@ position: absolute;
   font-weight: 700;
   text-decoration: underline;
 }
-.footer-menu-link:hover {
+.footer-menu-link:hover,
+.breadcrumbs .site-link:hover,
+.modal-log-in-btn:hover {
+  color: #ffbc9e;
+}
+.footer-menu-link:active,
+.breadcrumbs .site-link:active,
+.modal-log-in-btn:active {
   color: #ffbc9e;
 }
 .footer-menu-link:active {
@@ -1428,21 +1443,24 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transform: rotate(45deg);
 }
 .pagination-links > li {
-  margin-right: 7px; 
+  margin-right: 8px; 
 }
 .pagination-item {
   line-height: 18px;
-  padding: 2px 7px;
+  padding: 2px 6px;
   border-radius: 20px;
-  font-weight: 500;
-}
-.pagination-item:hover {
-  background-color: #ffffff;
-  color: #353535;
   font-weight: 500;
 }
 .pagination-item.active {
   background-color: #ffffff;
   color: #353535;
   font-weight: 500;
+}
+.pagination-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #353535;
+  font-weight: 500;
+}
+.pagination-item:active {
+  background-color: #ffffff;
 }
