@@ -76,9 +76,17 @@ input[type="password"],
   background-image: url("../img/slider-ice-cream-3.png");
 }
 /*Header*/
-.header-logo {
-  width: 154px;
+.header-logo-svg {
+  width: 189px;
   height: 64px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+}
+.header-logo {
+  width: 156px;
+  height: 64px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
 }
 .header-menu {
   width: 600px;
@@ -94,14 +102,21 @@ input[type="password"],
   border-radius: 50px;
   letter-spacing: 0.3px;
 }
-.menu-item-span {
+.menu-item-span,
+.breadcrumbs-link-span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .menu-item:hover,
-.menu-item:focus {
+.menu-item:focus,
+.user-navigation-item:hover,
+.user-navigation-item:focus {
   color: #333333;
   background-color: #f7f6f3;
   border-radius: 50px;
+}
+.user-navigation-item:hover svg,
+.user-navigation-item:focus svg {
+  fill: #000000;
 }
 .menu-item:active {
   background-color: #ededed;
@@ -129,8 +144,8 @@ input[type="password"],
   visibility: hidden;
   overflow: hidden;
 }
-.header-menu > li:first-child:hover .header-submenu {
-  //display: block;
+.header-menu > li:first-child:hover .header-submenu,
+.header-menu > li:first-child:focus .header-submenu {
   opacity: 1;
   visibility: visible;
   display: block;
@@ -189,7 +204,7 @@ input[type="password"],
   position: relative;
 }
 .user-navigation-span {
-  padding-left: 25px;
+  padding-left: 24px;
 }
 .user-navigation-item:hover {
   background-color: #f8f7f4;
@@ -220,7 +235,8 @@ input[type="password"],
   top: 8px;
   left: 8px;
 }
-.header-user-navigation > li:first-child:hover .modal-search {
+.header-user-navigation > li:first-child:hover .modal-search,
+.header-user-navigation > li:first-child:focus .modal-search {
   display: block;
   opacity: 1;
   visibility: visible;
@@ -364,12 +380,14 @@ input[type="password"],
 }
 /********************Конец разметки .slider***********************/
 .offer-card-raspberries {
-  background-image: url("../img/raspberry.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../img/raspberry-full.jpg");
+  background-repeat: repeat-y;
+  min-height: 230px;
 }
 .offer-card-chocolate {
-  background-image: url("../img/chocolate.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../img/chocolate-full.jpg");
+  background-repeat: repeat-y;
+  min-height: 230px;
 }
 .offer-card-slogan {
   font-size: 35px;
@@ -385,10 +403,9 @@ input[type="password"],
   font-size: 18px;
   line-height: 24px;
   border-radius: 20px;
-  position: absolute;
-  right: 23px;
-  bottom: 25px;
-  padding: 10px 20px;
+  padding: 11px 21px;
+  float: right;
+  margin-top: 44px;
 }
 /*Секция ХИТ*/
 .main-hits-price {
@@ -396,7 +413,7 @@ input[type="password"],
   line-height: 45px;
   font-weight: 700;
   position: absolute;
-  top: 211px;
+  top: 209px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
   //align-items: baseline;
 }
@@ -441,7 +458,34 @@ input[type="password"],
   padding-left: 55px;
   padding-top: 20px;
 }
-.shop-description-market > svg {
+.description-market-svg.ice-cream {
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/ice-cream.svg);
+  position: absolute;
+  left: 7px;
+  top: 9px;
+}
+.description-market-svg.cow {
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/cow.svg);
+  position: absolute;
+  left: 7px;
+  top: 9px;
+}
+.description-market-svg.leaf {
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/eco.svg);
+  position: absolute;
+  left: 7px;
+  top: 9px;
+}
+.description-market-svg.thermometer {
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/thermometer.svg);
   position: absolute;
   left: 7px;
   top: 9px;
@@ -508,7 +552,7 @@ input.blog-info-email {
   font-size: 14px;
   line-height: 20px;
 }
-.street{
+.street {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -809,15 +853,15 @@ input.blog-info-email {
 }
 .filter-label input[type="checkbox"],
 .filter-label input[type="radio"] {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  //left: -9999px;
 }
 .filter-label input[type="checkbox"] + .indicator,
 .filter-label input[type="radio"] + .indicator {
   position: absolute;
   top: -2px;
   left: 4px;
-  //width: 14px;
-  //height: 14px;
   border: 2px solid #e6ebe9;
   border-radius: 2px;
   margin-right: 5px;
@@ -834,12 +878,12 @@ input.blog-info-email {
   width: 16px;
   height: 16px;
 }
-/*передаем событие на псевдо чекбокс*/
+/*Give to action the pseudo element*/
 .filter-label input[type="checkbox"]:active + .indicator,
 .filter-label input[type="radio"]:active + .indicator {
   border-color: #ffffff;
 }
-/*Иконка выбранного чекбокса*/
+/*The checked checkbox icon*/
 input[type="checkbox"]:checked + .indicator::before {
   content: "";
   position: absolute;
@@ -850,7 +894,7 @@ input[type="checkbox"]:checked + .indicator::before {
   border-right: 4px solid #ffffff;
   border-bottom: 4px solid #ffffff;
 }
-/*Иконка выбранного radio*/
+/*The checked radio icon*/
 .filter-label input[type="radio"]:checked + .indicator::before {
   content: "";
   position: absolute;
@@ -870,6 +914,25 @@ input[type="radio"]:checked + .indicator {
 }
 input[type="checkbox"]:checked + .indicator::before {
   transform: rotate(45deg);
+}
+/*Hover, focus and hover state for Radio and Checkbox*/
+.filter-label input[type="radio"]:hover + .indicator {
+  border: 4px solid #ffffff;
+}
+.filter-label input[type="radio"]:active + .indicator {
+  border: 4px solid #e6ebe9;
+}
+.filter-label input[type="checkbox"]:hover + .indicator {
+  border: 2px solid #ffffff;
+}
+.filter-label input[type="checkbox"]:active + .indicator {
+  border: 2px solid #e6ebe9;
+}
+input[type="radio"]:focus + .indicator {
+  border: 4px solid #ffffff;
+}
+input[type="checkbox"]:focus + .indicator {
+  border: 2px solid #ffffff;
 }
 /*-----------range--------------*/
 .filter-item {
@@ -1096,13 +1159,22 @@ input[type="checkbox"]:checked + .indicator::before {
 .main-hits-item:hover .hits-item-btn {
   display: block;
 }
-.hits-item > svg {
+/*.hits-item > svg {
 position: absolute;
-}
-.main-hits-price > svg {
+}*/
+/*.main-hits-price > svg {
   position: absolute;
   top: 5px;
   left: 80px;
+}*/
+.price-svg {
+  width: 31px;
+  height: 36px;
+  background-image: url(../img/ruble.svg);
+  position: absolute;
+  top: 215px;
+  left: 80px;
+  z-index: 2;
 }
 .main-hits-img {
   margin-bottom: 9px;
@@ -1129,6 +1201,11 @@ position: absolute;
 .header-user-navigation,
 .main-offer > .container {
   display: flex;
+  flex-grow: 0;
+}
+.main-offer > .container {
+  -ms-align-items: flex-start;
+  align-items: flex-start;
 }
 .header-main-menu {
   width: 1200px;
@@ -1161,8 +1238,7 @@ position: absolute;
 }
 .offer-card {
   width: 560px;
-  height: 230px;
-  //margin-bottom: 40px;
+  //min-height: 230px;
   border-radius: 15px;
   padding: 15px 20px;
   box-sizing: border-box;
@@ -1176,7 +1252,7 @@ position: absolute;
   display: flex;
 }
 .main-hits-index {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 .main-hits-index > .container {
   width: 1200px;
@@ -1203,9 +1279,16 @@ position: absolute;
 .main-hits-index .main-hits-item:nth-child(4n+1) {
   margin-left: 0;
 }
-.main-hits-item > svg {
+/*.main-hits-item > svg {
   position: absolute;
   z-index: 1;
+}*/
+.hits-item-svg {
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  z-index: 1;
+  background-image: url(../img/hit.svg);
 }
 .shop-description {
   //min-height: 305px;
@@ -1254,8 +1337,9 @@ position: absolute;
   height: 305px;
   background-color: #fffffe;
   position: absolute;
-  right: 10px;
-  top: 64px;
+  left: 870px;
+  bottom: 172px;
+  z-index: 1;
   border-radius: 20px;
   padding: 30px 25px;
   box-sizing: border-box;
@@ -1276,7 +1360,7 @@ position: absolute;
   justify-content: space-between;
 }
 .footer-about {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .about-container {
   padding-right: 12px;
@@ -1288,7 +1372,13 @@ position: absolute;
   display: -o-flex;
   display: flex;
   flex-direction: column;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+}
+.copyright-img {
+  width: 110px;
+  height: 40px;
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
 }
 .social-icon > svg {
   border: 2px solid #c2cec7;
@@ -1334,11 +1424,15 @@ position: absolute;
   position: relative;
   padding-left: 20px;
 }
-.footer-menu-item > svg {
+.menu-item-svg {
+  width: 15px;
+  height: 13px;
+  background-image: url(../img/heart.svg);
   position: absolute;
   bottom: 5px;
   left: 0;
 }
+
 /************Сетка страницы Каталога******************/
 .breadcrumbs {
 display: flex;
@@ -1445,11 +1539,14 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transform: rotate(45deg);
 }
 .pagination-links > li {
-  margin-right: 8px; 
+  margin-right: 5px; 
 }
 .pagination-item {
-  line-height: 18px;
-  padding: 2px 6px;
+  line-height: 25px;
+  //padding: 2px 6px;
+  text-align: center;
+  width: 25px;
+  height: 25px;
   border-radius: 20px;
   font-weight: 500;
 }
